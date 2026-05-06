@@ -1,0 +1,47 @@
+MACHINE LEARNING NOTES
+======================
+
+What is Machine Learning?
+Machine Learning is a subset of Artificial Intelligence where systems learn from data
+to make predictions or decisions without being explicitly programmed.
+
+Types of Machine Learning:
+1. Supervised Learning - Model learns from labeled data
+   Examples: Linear Regression, Decision Trees, Random Forest, SVM
+
+2. Unsupervised Learning - Model finds patterns in unlabeled data
+   Examples: K-Means Clustering, PCA, Autoencoders
+
+3. Reinforcement Learning - Model learns by trial and reward
+   Examples: Game playing agents, Robotics
+
+Key Algorithms:
+- Linear Regression: Predicts continuous values
+- Logistic Regression: Predicts categories (classification)
+- Decision Tree: Splits data based on feature conditions
+- Neural Networks: Layers of nodes that mimic the human brain
+
+How Statistics is Used in Machine Learning:
+- Probability distributions to model uncertainty
+- Hypothesis testing to validate model performance
+- Mean, variance, standard deviation for feature analysis
+- Bayes theorem for probabilistic classifiers
+- P-value to measure statistical significance of results
+
+Model Evaluation Metrics:
+- Accuracy: Correct predictions / Total predictions
+- Precision: True Positives / (True Positives + False Positives)
+- Recall: True Positives / (True Positives + False Negatives)
+- F1 Score: Balance between Precision and Recall
+- RMSE: Root Mean Square Error for regression problems
+
+Overfitting vs Underfitting:
+- Overfitting: Model performs well on training data but fails on new data
+- Underfitting: Model is too simple to capture patterns
+- Solution: Cross-validation, regularization, more training data
+
+Feature Engineering:
+- Selecting the right input variables
+- Normalizing and scaling data
+- Handling missing values
+- Encoding categorical variables

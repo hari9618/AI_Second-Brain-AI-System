@@ -1,0 +1,59 @@
+SQL NOTES
+=========
+
+What is SQL?
+SQL (Structured Query Language) is used to manage and query data stored in
+relational databases. It is a core skill in Data Science and Data Engineering.
+
+Basic SQL Commands:
+
+SELECT - Retrieve data from a table
+  SELECT name, age FROM students;
+
+WHERE - Filter rows based on condition
+  SELECT * FROM students WHERE age > 20;
+
+ORDER BY - Sort results
+  SELECT * FROM students ORDER BY age DESC;
+
+GROUP BY - Group rows and apply aggregate functions
+  SELECT department, COUNT(*) FROM employees GROUP BY department;
+
+JOIN - Combine data from multiple tables
+  INNER JOIN: Returns matching rows from both tables
+  LEFT JOIN: Returns all rows from left table + matching from right
+  RIGHT JOIN: Returns all rows from right table + matching from left
+
+  SELECT s.name, c.course_name
+  FROM students s
+  INNER JOIN courses c ON s.course_id = c.id;
+
+Aggregate Functions:
+  COUNT() - Count number of rows
+  SUM()   - Sum of values
+  AVG()   - Average value
+  MAX()   - Maximum value
+  MIN()   - Minimum value
+
+SQL in Data Science:
+  1. Extracting datasets from databases for analysis
+  2. Data cleaning — removing duplicates, handling NULLs
+  3. Feature engineering — creating new columns from existing data
+  4. Aggregating data before passing to ML models
+  5. Joining multiple data sources into one clean dataset
+
+SQL and Machine Learning Connection:
+  - SQL extracts raw data → Python/Pandas processes it → ML model trains on it
+  - Data scientists use SQL daily to explore and understand datasets
+  - SQL is used to create training and testing datasets
+  - Complex SQL queries can replace simple data transformations
+
+Subqueries:
+  SELECT name FROM students
+  WHERE age = (SELECT MAX(age) FROM students);
+
+Window Functions (Advanced):
+  ROW_NUMBER() - Assigns row numbers
+  RANK()       - Ranks rows within a partition
+  LAG/LEAD     - Access previous/next row values
+  Used heavily in time-series data preparation for ML

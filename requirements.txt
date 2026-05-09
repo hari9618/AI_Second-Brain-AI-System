@@ -1,8 +1,5 @@
 # Second Brain - Requirements
 
-fastapi==0.111.0
-uvicorn==0.29.0
-python-multipart==0.0.9
 
 # LangChain
 langchain==0.2.1

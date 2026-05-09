@@ -1,23 +1,23 @@
- #Second Brain - Requirements
-# Versions verified compatible with each other on Windows + 8GB RAM
+# Second Brain - Requirements
 
 fastapi==0.111.0
 uvicorn==0.29.0
 python-multipart==0.0.9
 
-# LangChain — these 3 must match together
+# LangChain
 langchain==0.2.1
 langchain-community==0.2.1
 langchain-core==0.2.5
+langchain-text-splitters==0.2.0
 
-# Google Gemini — langchain-google-genai 1.0.6 needs google-generativeai >=0.5.2,<0.6.0
+# Gemini
 langchain-google-genai==1.0.6
 google-generativeai==0.5.4
 
-# ChromaDB — 0.4.24 is stable, no capture() telemetry bug
+# Vector DB
 chromadb==0.4.24
 
-# Document reading
+# PDF
 pypdf==4.2.0
 
 # Utilities
